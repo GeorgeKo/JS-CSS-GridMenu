@@ -2,12 +2,22 @@ html,body{
     margin: 0;
 }
 
+.button{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .2s ease-in;
+    cursor: pointer ;
+}
+
 .menu.button.out{
     position: fixed;
     top: 0;
     right: 0;
     height: 6.25vh;
     width: 3.125vw;
+    background: green;
 }
 
 .menu.container{
@@ -26,16 +36,13 @@ html,body{
     cursor: auto;
 }
 .menu.container .button{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    opacity: 0;
     transition: opacity .2s ease-in;
-    cursor: pointer ;
 }
 
-.show .button{
 
+.show.menu.container .button{
+    opacity: 1;
 }
 /* .button.vert{
     transform: scaleY(100%);
